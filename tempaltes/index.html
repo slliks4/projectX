@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1500, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <h1>ski<span>ll</span>s</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#home">home</a>
+            </li>
+            <li>
+                <a href="#about">about us</a>
+            </li>
+            <li>
+                <a href="#gallery">gallery</a>
+            </li>
+            <li>
+                <a href="#testimonials">testimonials</a>
+            </li>
+            <li>
+                <a href="#contact">contact us</a>
+            </li>
+        </ul>
+        <div class="socials">
+            <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+    <div class="body">
+        <section class="spa">
+            <div class="home" id="home">
+                <div class="content">
+                    <h3>bella's clothing :</h3>
+                    <h1>make your style gorgeous</h1>
+                </div>
+            </div>
+            <div class="about_us" id="about">
+                <h2>about us</h2>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita magni modi provident voluptas quaerat perferendis, saepe soluta dolor adipisci eveniet natus alias praesentium quisquam tempora in vero. Illo, odio!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur quidem voluptatem autem placeat mollitia fuga animi doloribus distinctio dolore velit adipisci, ex ea iure a non asperiores. Laborum, vitae!
+                    </p>
+                    <a href="">know more</a>
+                </div>
+            </div>
+            <div class="box_design">
+                <div>
+                    <div class="image">
+                        <img src="/static/img/scissors1.png" alt="">
+                    </div>
+                    <h3>excellence cutting</h3>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="/static/img/fabric.jpg" alt="">
+                    </div>
+                    <h3>quality fabric</h3>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="/static/img/tailoring.png" alt="">
+                    </div>
+                    <h3>expert tailoring</h3>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="/static/img/stitch.jpg" alt="">
+                    </div>
+                    <h3>stiched with care</h3>
+                </div>
+            </div>
+            <div class="card_design">
+                <div class="flex">
+                    <div class="content">
+                        <h3>
+                            male clothes and shorts
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde doloremque eligendi fuga error aliquid veritatis nisi voluptatum voluptatem dolorum nam facilis tempore, libero natus modi vel eaque est! Distinctio, deleniti.
+                        </p>
+                        <a href="">
+                            shop now
+                        </a>
+                    </div>
+                    <div class="image">
+                        <img src="/static/img/male.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="image">
+                        <img src="/static/img/female.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>
+                            female clothes and shorts
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde doloremque eligendi fuga error aliquid veritatis nisi voluptatum voluptatem dolorum nam facilis tempore, libero natus modi vel eaque est! Distinctio, deleniti.
+                        </p>
+                        <a href="">
+                            shop now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="gallery">
+                <h1>our gallery</h1>
+                <div class="slideshow">
+                    <button>
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="slides">
+                        <img src="/static/img/img.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="/static/img/img19.jpg" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="/static/img/img3.jpg" alt="">
+                    </div>
+                    <button>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="step_design">
+                <div>
+                    <div>1</div>
+                    <h2>select a product</h2>
+                    <p>
+                        Aenean sollicitudin, lorem quis Lorem Ipsum. Proin gravida nibh vel velit auctor
+                    </p>
+                </div>
+                <div>
+                    <div>2</div>
+                    <h2>contact us</h2>
+                    <p>
+                        Aenean sollicitudin, lorem quis Lorem Ipsum. Proin gravida nibh vel velit auctor
+                    </p>
+                </div>
+                <div>
+                    <div>3</div>
+                    <h2>we deliver</h2>
+                    <p>
+                        Aenean sollicitudin, lorem quis Lorem Ipsum. Proin gravida nibh vel velit auctor
+                    </p>
+                </div>
+            </div>
+            <div class="testimonials" id="testimonials">
+                <div class="left">
+                    <button>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </button>
+                    <div class="image">
+                        <img src="/static/img/bg4.jpg" alt="">
+                    </div>
+                    <p>""</p>
+                </div>
+                <div class="right">
+                    <div class="slides">
+                        <h3>testimonials</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequuntur voluptas laudantium
+                        </p>
+                        <h4>george Beathovan - <span>ceo</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h1>get in touch</h1>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="enter your full name">
+                    <input type="email" name="email" id="email" placeholder="enter your email">
+                    <textarea name="message" placeholder="Leave a message"></textarea>
+                    <button>submit</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="flex">               
+                <div class="logo">
+                    <div class="image">
+                        <img src="" alt="">
+                    </div>
+                    <h1>ski<span>ll</span>s</h1>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</li>
+                        <li>E-mail: info@example.com</li>
+                        <li>Phone: 0000 - 123 - 456789</li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h3>subscribe today</h3>
+                    <form>
+                        <input type="text" name="subscribe" id="subscribe" placeholder="email id here">
+                        <button>subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="ending">
+                © 2023 dt-dark fashion Design Themes
+            </div>
+        </footer>
+    </div>
+    <a href="#home" class="top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+</body>
+</html>
