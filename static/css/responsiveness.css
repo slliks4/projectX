@@ -1,0 +1,114 @@
+@media only screen and (max-width:480px) {
+    header{
+        left: -1000px;
+        width: 100%;
+    }
+    .nav{
+        top: 13vh;
+        left: -1000px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 87vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: rgb(67, 67, 67);
+        transition: .2s ease-in-out;
+    }
+    .nav li a{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    .body{
+        width: 100%;
+        left: 0;
+    }
+    .body i{
+        display: block;
+        font-size: 30px;
+        margin-left: 310px;
+    }
+    .spa .about_us{
+        flex-direction: column;
+    }
+    .spa .about_us h2{
+        width: 50%;
+    }
+    .spa .about_us div{
+        width: 100%;
+    }
+    .spa .box_design>div{
+        padding: 0px 20px;
+        width: 100%;
+        border: 2px solid palevioletred;
+    }
+    .spa .box_design>div h3{
+        width: 100%;
+    }
+    .spa .card_design .flex{
+        flex-direction: column;
+    }
+    .spa .card_design .flex:nth-of-type(1){
+        flex-direction: column-reverse;
+    }
+    .spa .card_design .flex .content{
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .spa .card_design .flex .image{
+        width: 100%;
+    }
+    .spa .gallery .slides{
+        min-width: 100%;
+        margin: 0;
+    }
+    .spa .gallery .slideshow button{
+        display: none;
+    }
+    .spa .step_design{
+        flex-direction: column;
+    }
+    .spa .step_design>div{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .spa .testimonials{
+        flex-direction: column;
+    }
+    .spa .testimonials .left{
+        width: 100%;
+    }
+    .spa .testimonials button{
+        display: none;
+    }
+    .spa .testimonials .right{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .spa .contact{
+        width: 100%;
+        padding: 0;
+    }
+    .spa .contact h1{
+        font-size: 25px;
+    }
+    .spa .contact form{
+        width: 100%;
+        padding: 15px;
+    }
+    footer{
+        padding:20px;
+        border: none;
+    }
+    footer .flex{
+        flex-direction: column;
+    }
+    footer .flex>div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width:481px){
+
+}
