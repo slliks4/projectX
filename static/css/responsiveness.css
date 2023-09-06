@@ -3,32 +3,9 @@
         left: -1000px;
         width: 100%;
     }
-    .nav{
-        top: 13vh;
-        left: -1000px;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 87vh;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: rgb(67, 67, 67);
-        transition: .2s ease-in-out;
-    }
-    .nav li a{
-        font-size: 30px;
-        margin-right: 20px;
-    }
     .body{
         width: 100%;
         left: 0;
-    }
-    .body i{
-        display: block;
-        font-size: 30px;
-        margin-left: 310px;
     }
     .spa .about_us{
         flex-direction: column;
@@ -65,7 +42,7 @@
         margin: 0;
     }
     .spa .gallery .slideshow button{
-        display: none;
+
     }
     .spa .step_design{
         flex-direction: column;
