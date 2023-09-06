@@ -7,6 +7,9 @@
         width: 100%;
         left: 0;
     }
+    div.menu{
+        display: block;
+    }
     .spa .about_us{
         flex-direction: column;
     }
@@ -40,9 +43,6 @@
     .spa .gallery .slides{
         min-width: 100%;
         margin: 0;
-    }
-    .spa .gallery .slideshow button{
-
     }
     .spa .step_design{
         flex-direction: column;
