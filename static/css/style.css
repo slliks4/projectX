@@ -7,6 +7,13 @@
 body{
     position: relative;
 }
+.header_toggle{
+    left: 0;
+}
+.section_toggle{
+    width: 100%;
+    left: 0;
+}
 div.menu{
     display: none;
     z-index: 5;
