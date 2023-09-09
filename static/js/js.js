@@ -4,9 +4,9 @@ function contact(){
 function subcribe(){
   alert("thanking for subcribing to ptoject X")
 }
-const header = document.querySelector("header");
-const body = document.querySelector('div.body');
+const nav = document.querySelector("header ul.nav");
+const body = document.querySelector('body');
 document.querySelector("div.menu").addEventListener("click", () => {
-  header.classList.toggle('header_toggle');
-  body.classList.toggle('.section_toggle');
+  nav.classList.toggle('header_toggle');
+  body.classList.toggle('overflow');
 });

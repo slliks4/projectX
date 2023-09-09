@@ -4,112 +4,68 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    position: relative;
-}
 .header_toggle{
     left: 0;
 }
-.section_toggle{
-    width: 100%;
-    left: 0;
+.overflow{
+    overflow: hidden;
 }
-div.menu{
-    display: none;
-    z-index: 5;
-    position: fixed;
-    right: 10px;
-    top:10px;
-    font-size: 60px;
-    color: palevioletred;
+.active_page{
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
 }
-div.menu .fa-times{
+.menu{
     display: none;
 }
-.top{
-    width: 50px;
-    height: 50px;
-    bottom: 10px;
-    right: 10px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border: 1px solid palevioletred;
-    background-color: palevioletred;
+.head{
+    text-align: center;
+    font-size: 10px;
+    background:linear-gradient(rgba(0, 0, 0, 0.701),rgba(0, 0, 0, 0.724)),url('/static/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    border-radius: 50%;
 }
 header{
-    z-index: 5;
-    width: 20%;
-    height: 100vh;
-    padding: 40px 20px;
-    position: fixed;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid black;
-    background-color: rgb(255, 255, 255);
-    transition: .2s ease-in-out;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.701),rgba(0, 0, 0, 0.724)),url('/static/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header .text{
+    display: none;
 }
 header .logo{
-    display: flex;
-    align-items: center;
+    height: 50px;
+    width: 6%;
 }
-header .logo .image{
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-}
-header .logo .image img{
+header .logo img{
     width: 100%;
-    height: 100%;
 }
-header .logo h1{
-    font-size: 30px;
-    text-transform: capitalize;
-    color: palevioletred;
-}
-header ul li{
-    padding: 20px 0px;
-    list-style-type: none;
-}
-header ul li a{
-    font-size: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: palevioletred;
-    transition: .2s ease-in-out;
-}
-header ul li a:hover{
-    color: silver;
-}
-header .socials{
+header ul{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
 }
-header .socials a{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header li{
+    padding: 10px;
+    margin-left: 20px;
+}
+header li a{
     text-decoration: none;
-    border: 1px solid black;
     color: palevioletred;
-    transition: .2s ease-in-out;
+    font-size: 22px;
 }
-header .socials a:hover{
-    color: silver;
-    border: 1px solid silver;
+header i{
+    display: none;
 }
 .body{
-    width: 80%;
-    left: 20%;
-    padding: 20px;
+    padding:80px;
     position: absolute;
     background:linear-gradient(rgba(0, 0, 0, 0.701),rgba(0, 0, 0, 0.724)),url('/static/img/bg.jpg');
     background-repeat: no-repeat;
@@ -118,36 +74,8 @@ header .socials a:hover{
     background-attachment: fixed;
     color: white;
 }
-.spa .home{
-    height: 93vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.574)),url('/static/img/bg3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.spa .home .content{
-    padding: 30px;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-}
-.spa .home .content h3{
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: palevioletred;
-}
-.spa .home .content h1{
-    font-size: 50px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: black;
-}
 .spa .about_us{
-    padding: 80px 0px;
+    padding: 40px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,18 +99,6 @@ header .socials a:hover{
     line-height: 30px;
     color: silver;
 }
-.spa .about_us div a{
-    margin-top: 20px;
-    padding: 20px;
-    width: fit-content;
-    font-weight: bold;
-    display: block;
-    text-decoration: none;
-    text-transform: capitalize;
-    background-color: white;
-    color: palevioletred;
-    transition: .2s ease-in-out;
-}
 .spa .about_us div a:hover{
     background-color: palevioletred;
     color: white;
@@ -190,6 +106,7 @@ header .socials a:hover{
 .spa .box_design{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 100px;
 }
 .spa .box_design>div{
     width: 50%;
@@ -226,7 +143,7 @@ header .socials a:hover{
     text-transform: capitalize;
 }
 .spa .card_design{
-    padding: 80px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -277,12 +194,16 @@ header .socials a:hover{
     object-fit: cover;
     object-position: center;
 }
-.spa .gallery h1{
+.spa .gallery>h1:nth-child(1){
     font-size: 50px;
     font-weight: 400;
     letter-spacing: 5px;
     text-transform: capitalize;
-    text-align: center;
+}
+.spa .gallery h2{
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 .spa .gallery .slideshow{
     position: relative;
@@ -300,17 +221,29 @@ header .socials a:hover{
     margin-left: 0;
 }
 .spa .gallery .slides{
-    min-width: 32%;
-    height: 60vh;
+    position: relative;
+    min-width: 23%;
+    height: 100%;
     margin-left: 2%;
+}
+.spa .gallery .slides .text h6{
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    font-size: 30px;
 }
 .spa .gallery .slides img{
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     object-position: center;
 }
 .spa .gallery .slideshow button{
+    z-index: 2;
     width: 50px;
     height: 50px;
     font-size: 20px;
@@ -494,8 +427,69 @@ header .socials a:hover{
     color: palevioletred;
     background-color: white;
 }
+.firsttext{
+    padding: 50px;
+}
+.firsttext h1{
+    text-transform: uppercase;
+}
+.firsttext h4{
+    padding-top: 20px;
+    font-weight: 300;
+}
+.container{
+    width: 100%;
+    height: 40vh;
+}
+.container h1{
+    padding: 100px 35%;
+    text-align: center;
+    font-weight: 200;
+}
+.container a{
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
+    color: black;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.content_container{
+    margin-bottom: 25px;
+    width: 32%;
+    margin-right: 15px;
+}
+.content_container img{
+    width: 100%;
+    height: 450px;
+}
+.content_container h1{
+    font-size: 20px;
+    text-align: center;
+}
+.content_container a{
+    font-size: 15px;
+    color: black;
+    padding-left: 90px;
+}
+.subscribeemail{
+    text-align: center;
+    padding: 20px;
+}
+.subscribeemail h4{
+    font-size: 25px;
+    font-weight: 400;
+}
+.subscribeemail input{
+    margin-top: 10px;
+    width: 30%;
+    height: 40px;
+    padding: 20px;
+}
 footer{
-    padding: 20px 0px 0px;
+    padding: 20px 5%;
     border-top: 2px solid palevioletred ;
 }
 footer .flex{
@@ -560,5 +554,5 @@ footer .flex .subscribe form button{
 }
 footer .ending{
     margin-top: 10px;
-    color: silver;
+    color: rgb(117, 114, 114);
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project x sales</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsiveness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1500, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+    </head>
+<body>
+    <div class="head">
+        <h1><marquee behavior="" direction="">FREE DILLIVERY ON ALL PURCHASES!</marquee> </h1>
+    </div>
+    <header>
+        <div class="logo">
+                <img src="/static/img/logo.jpg" alt="">
+        </div>
+        <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/tshirt.html">T-shirt</a></li>
+        <li><a href="/hoddie.html">Hoddies</a></li>
+        <li><a href="/hat.html">Hats</a></li>
+        <li><a href="/denim.html">Distressed Denim</a></li>
+        <li><a href="/shorts..html">Shorts</a></li>
+        <li><a href="/eyeglass.html">Eye glasses</a></li>
+        <li><a href="/slippers.html">Slippers</a></li>
+        <li><a href="/skirt.html">Skirt</a></li>
+        <li><a href="/trouser.html">Trousers</a></li>
+        <li><a href="#" class="active_page">Sales</a></li>
+        </ul>
+    </header>
+    <div class="firsttext">
+        <h1>Sales</h1>
+    </div>
+    <div class="container">
+        <h1>No products found Use fewer filters or <a href="">remove all</a> </h1>
+    </div>
+    <div class="subscribeemail">
+        <h4>Subscribe to our emails for Unreleased outfits</h4>
+        <input type="email" placeholder="Email">
+    </div>
+    <footer>
+        <div class="flex">               
+            <div class="logo">
+                <div class="image">
+                    <img src="/static/img/logo.jpg" alt="">
+                </div>
+                <h1>Project X</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</li>
+                    <li>E-mail: projectx@gmail.com</li>
+                    <li>Phone: 08064994478</li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h3>subscribe today</h3>
+                <form>
+                    <input type="text" name="subscribe" id="subscribe" placeholder="email id here">
+                    <button onclick="subcribe()">subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="ending">
+            © 2023 fashion designs
+        </div>
+    </footer>
+</body>
+<script src="/static/js/js.js"></script>
+</html>
